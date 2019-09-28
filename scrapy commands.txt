@@ -1,0 +1,2 @@
+scrapy crawl cumhuriyet -s MONGO_COLLECTION="cumhuriyet" -s JOBDIR=crawls/cumhuriyet --logfile cumhuriyet.log
+scrapy crawl ntv -s MONGO_COLLECTION="ntv" -s JOBDIR=crawls/ntv --logfile ntv.log
