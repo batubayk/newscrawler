@@ -26,7 +26,7 @@ class MagyarNemzetSpider(CrawlSpider):
 
     def parse_item(self, response):
         item = NewsItem()
-        if response.xpath('//div[@class="en-article-lead"]') not in ['',None,[]]:
+        if response.xpath('//div[@class="entry-content clearfix"]/div[@class="en-article-lead"]') not in ['',None,[]]:
             try:
                 url = str(response.url)
                 item['url'] = url
