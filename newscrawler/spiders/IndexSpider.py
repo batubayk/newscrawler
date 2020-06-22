@@ -26,7 +26,7 @@ class IndexSpider(CrawlSpider):
 
     def parse_item(self, response):
         item = NewsItem()
-        if response.xpath('//div[@class="szelso-jobb-lead_container"]') not in ['',None,[]]:
+        if response.xpath('//div[@class="szelso-jobb-lead_container"]//div[@class="lead"]/text()').extract() not in ['',None,[]]:
             try:
                 url = str(response.url)
                 item['url'] = url
