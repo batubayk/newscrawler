@@ -1,5 +1,0 @@
-scrapy crawl cumhuriyet -s MONGO_COLLECTION="cumhuriyet" -s JOBDIR=crawls/cumhuriyet --logfile cumhuriyet.log
-scrapy crawl ntv -s MONGO_COLLECTION="ntv" -s JOBDIR=crawls/ntv --logfile ntv.log
-scrapy crawl haberturk -s MONGO_COLLECTION="haberturk" -s JOBDIR=crawls/haberturk --logfile haberturk.log
-
-C:\Users\batuhan>mongodump --gzip --archive=C:\Users\batuhan\Desktop\NewsDataDump\06_10_19
